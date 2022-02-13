@@ -12,7 +12,7 @@
     src: url('../font/museoSansCurl/MuseoSansCyrl-700.eot') format('embedded-opentype'),
     url('../font/museoSansCurl/MuseoSansCyrl-700.woff') format('woff'),
     url('../font/museoSansCurl/MuseoSansCyrl-700.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     }
 html,body {
@@ -21,9 +21,7 @@ html,body {
     font-weight: 400;
     color:#fff;
 }
-body {
-   
-}
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
@@ -81,6 +79,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 18.7rem;
     background: url('../img/background.jpg')center top no-repeat;
     background-size: cover;
+    padding-bottom: 10.4rem;
 }
 .main__rating {
     margin-bottom: 1rem;
@@ -122,11 +121,36 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 120%;
     margin: 0 0 .9rem 0   ;
 }
+.main__description-wrap {
+    display: flex;
+    align-items: center;
+}
 .main__description {
     max-width: 52.8rem;
     font-size: 1.4rem;
     line-height: 150%;
     margin-bottom: 4.1rem;
+}
+.main__button-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.2rem;
+    height: 13.2rem;
+    margin-left: 33.1rem;
+    border-radius: 50%;
+    background-color: #391917;
+    
+}
+.main__button-dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #151515;
 }
 .main__buttom {
     display: inline-block;
@@ -139,6 +163,39 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     color: #FFFFFF;
     margin-bottom: 8.7rem;
+}
+.main__slider-wrap {
+    max-width: 41.5rem;
+    display: flex;
+    align-items: center;
+   
+}
+.main__slider-slide {
+    position: relative;
+    width: 16.4rem;
+    height: 10.5rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.main__slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main__slider-slide span {
+    position: absolute;
+    left: 1.2rem;
+    bottom: .6rem;
+    transform: translate(0,0);
+    font-size: 1rem;
+    line-height: 120%;
+}
+.main__slider-arrow {
+    width: 3.2rem;
+    height: 2.2rem;
+    margin-left: 2.8rem;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
 
